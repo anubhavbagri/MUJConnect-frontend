@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 import App from './App';
@@ -13,7 +13,9 @@ const history = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={history}>
-    <Route path="/" component={App} />
+    <Routes>
+      <Route exact path="/" element={<App />} />
+    </Routes>
   </Router>,
   document.getElementById('root')
 );

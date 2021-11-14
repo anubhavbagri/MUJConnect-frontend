@@ -8,7 +8,6 @@ import Modal from '../elements/Modal';
 import app from '../../utils/firebase-config';
 import firebase from 'firebase';
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
-import Chatroom from '../../views/chatroom';
 
 const propTypes = {
   ...SectionProps.types,
@@ -85,13 +84,6 @@ const Hero = ({
   };
   return (
     <section {...props} className={outerClasses}>
-      <div>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/chatroom" element={<Chatroom />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
       <div className="container-sm">
         <div className={innerClasses}>
           <div className="hero-content">

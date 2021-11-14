@@ -5,7 +5,6 @@ const Chatroom = () => {
     <div
       style={{
         textAlign: 'center',
-        backgroundColor: '#282c34',
       }}
     >
       <h1>Chatroom</h1>

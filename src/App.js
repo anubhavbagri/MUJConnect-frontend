@@ -9,6 +9,7 @@ import LayoutDefault from './layouts/LayoutDefault';
 
 // Views
 import Home from './views/Home';
+import Chatroom from './views/chatroom';
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -34,9 +35,12 @@ const App = () => {
     <ScrollReveal
       ref={childRef}
       children={() => (
-        <Routes>
-          <Route exact path="/" element={<Home />} layout={LayoutDefault} />
-        </Routes>
+        <LayoutDefault>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/chatroom" element={<Chatroom />} />
+          </Routes>
+        </LayoutDefault>
       )}
     />
   );

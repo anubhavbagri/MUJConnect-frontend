@@ -13,9 +13,8 @@ const history = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={history}>
-    <Routes>
-      <Route exact path="/" element={<App />} />
-    </Routes>
+    <App />
+    {/* <Route exact path="/" element={<App />} /> */}
   </Router>,
   document.getElementById('root')
 );

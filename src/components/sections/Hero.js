@@ -72,9 +72,9 @@ const Hero = ({
       .then((data) => {
         console.log(data.user.email);
         const goToChatPage = () => navigate('/chatroom');
-        if (data.user.email === 'anubhav.199302029@muj.manipal.edu') {
-          goToChatPage();
-        }
+        // if (data.user.email === 'anubhav.199302029@muj.manipal.edu') {
+        goToChatPage();
+        // }
         setLoader((prevState) => ({ ...prevState, microsoftLoading: false }));
       })
       .catch((e) => {

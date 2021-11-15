@@ -7,7 +7,7 @@ import Image from '../elements/Image';
 import Modal from '../elements/Modal';
 import app from '../../utils/firebase-config';
 import firebase from 'firebase';
-import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const propTypes = {
   ...SectionProps.types,
@@ -72,13 +72,16 @@ const Hero = ({
       .then((data) => {
         console.log(data.user.email);
         const goToChatPage = () => navigate('/chatroom');
-        // if (data.user.email === 'anubhav.199302029@muj.manipal.edu') {
-        goToChatPage();
-        // }
+        if (data.user.email.includes('manipal.edu')) {
+          goToChatPage();
+        } else {
+          alert('Please use college email id');
+        }
         setLoader((prevState) => ({ ...prevState, microsoftLoading: false }));
       })
       .catch((e) => {
-        console.log(e, 'error');
+        // console.log(e, 'error');
+        alert(`${e}`);
         setLoader((prevState) => ({ ...prevState, microsoftLoading: false }));
       });
   };

@@ -70,7 +70,7 @@ const Hero = ({
       .auth()
       .signInWithPopup(provider)
       .then((data) => {
-        console.log(data.user.email);
+        // console.log(data.user.email);
         const goToChatPage = () => navigate('/chatroom');
         if (data.user.email.includes('manipal.edu')) {
           goToChatPage();

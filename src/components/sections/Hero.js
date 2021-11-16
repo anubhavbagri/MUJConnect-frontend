@@ -8,6 +8,7 @@ import Modal from '../elements/Modal';
 import app from '../../utils/firebase-config';
 import firebase from 'firebase';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const propTypes = {
   ...SectionProps.types,
@@ -115,14 +116,11 @@ const Hero = ({
                   >
                     Login with Microsoft
                   </Button>
-                  {/* <Button
-                    tag="a"
-                    color="dark"
-                    wideMobile
-                    href=""
-                  >
-                    View on Github
-                  </Button> */}
+                  <Button tag="a" color="dark" wideMobile href="">
+                    <Link to="LearnMore" spy={true} smooth={true}>
+                      Learn More
+                    </Link>
+                  </Button>
                 </ButtonGroup>
               </div>
             </div>

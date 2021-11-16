@@ -69,9 +69,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Privacy Policy</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    All communications will be end-to-end encrypted meaning
+                    messages will only be viewable by you and the person you're
+                    chatting with.
                   </p>
                 </div>
               </div>
@@ -95,9 +95,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Personal Information</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    We advise you not to share any of your personal information
+                    on this platform. We won't be responsible for any loss of
+                    your personal data.
                   </p>
                 </div>
               </div>
@@ -121,9 +121,9 @@ const FeaturesTiles = ({
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">Hateful content</h4>
                   <p className="m-0 text-sm">
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat.
+                    Please refrain from abusing or using any type of hate
+                    speech. Harassment or personal attacks if reported will be
+                    dealt with strict action.
                   </p>
                 </div>
               </div>

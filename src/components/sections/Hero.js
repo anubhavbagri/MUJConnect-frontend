@@ -4,8 +4,6 @@ import { SectionProps } from '../../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
-import Modal from '../elements/Modal';
-import app from '../../utils/firebase-config';
 import firebase from 'firebase';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
@@ -28,19 +26,9 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
-  const [videoModalActive, setVideomodalactive] = useState(false);
-
   const navigate = useNavigate();
-
-  const openModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(true);
-  };
-
-  const closeModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(false);
-  };
+  // eslint-disable-next-line no-unused-vars
+  const [loader, setLoader] = useState({ microsoftLoading: false });
 
   const outerClasses = classNames(
     'hero section center-content',
@@ -56,13 +44,6 @@ const Hero = ({
     topDivider && 'has-top-divider',
     bottomDivider && 'has-bottom-divider'
   );
-  const [loader, setLoader] = React.useState({
-    microsoftLoading: false,
-  });
-  const [error, setError] = React.useState({
-    message: '',
-    open: false,
-  });
 
   const handleMicrosoftLogin = () => {
     setLoader((prevState) => ({ ...prevState, microsoftLoading: true }));

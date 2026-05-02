@@ -40,6 +40,7 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
               Made with &#10084; by{' '}
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/arjun-aghera-585525190/"
               >
                 Arjun
@@ -47,6 +48,7 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
               ,{' '}
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/ayush-agrawal-86143a190/"
               >
                 Lucifer
@@ -54,6 +56,7 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
               and
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/anubhavbagri/"
               >
                 {' '}

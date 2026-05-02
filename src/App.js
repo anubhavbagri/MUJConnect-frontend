@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import { useLocation, Routes, Route } from 'react-router-dom';
-import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
 
